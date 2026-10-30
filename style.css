@@ -270,4 +270,31 @@ footer {
     .logo {
         font-size: 20px;
     }
+    
+/* Clickable Service Cards */
+
+.service-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.service-card .learn-more {
+    display: inline-block;
+    margin-top: 18px;
+    color: #087f9b;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.service-card:hover .learn-more {
+    color: #102a43;
+}
+
+.service-card:focus-visible {
+    outline: 3px solid #087f9b;
+    outline-offset: 4px;
+}
+
 }
