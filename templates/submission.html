@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuscript Submission | Interlattice</title>
+</head>
+<body>
+
+    <h1>Manuscript Submission Form</h1>
+    <p>Please fill in your details and upload your manuscript.</p>
+
+    <form action="/submit-manuscript" method="POST" enctype="multipart/form-data">
+
+        <label>Author Name:</label>
+        <input type="text" name="author_name" required><br><br>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone" required><br><br>
+
+        <label>Institution / Organization:</label>
+        <input type="text" name="institution" required><br><br>
+
+        <label>Manuscript Title:</label>
+        <input type="text" name="manuscript_title" required><br><br>
+
+        <label>Upload Manuscript (Word document):</label>
+        <input type="file" name="manuscript"
+               accept=".doc,.docx"
+               required><br><br>
+        <button type="submit">Submit Manuscript</button>
+    </form>
+</body>
+</html>
